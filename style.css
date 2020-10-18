@@ -1,0 +1,54 @@
+.header-list {
+    list-style: none;
+}
+.roflex {
+    display: flex;
+}
+
+/*Telefon na výšku*/
+html {
+    background-color: indigo;
+}
+.minilogo {
+    width: 20px;
+    height: 20px;    
+}
+
+
+
+/*Telefon na šířku*/
+@media screen and (min-width: 560px) {
+    html {
+        background-color: green;
+    }
+    /*.header-list {
+        display: flex;
+    }
+    .hamburger {
+        display: none;
+    }*/
+}
+
+
+/*Tablet na výšku*/
+@media screen and (min-width: 720px) {
+    html {
+        background-color: red;
+    }
+}
+
+
+/*Tablet na šířku*/
+@media screen and (min-width: 960px) {
+    html {
+        background-color: blue;
+    }
+}
+
+
+/*Počítačový monitor*/
+@media screen and (min-width: 1200px) {
+    html {
+        background-color: pink;
+    }
+}
