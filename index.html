@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" href="minilogo.png">
     <script src="script.js"></script>
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -16,12 +17,20 @@
             <div class="header-left">
                 <a href="#"><img class="minilogo" src="./minilogo.png"></a>
             </div>
-            <ul class="header-list" id="header-list">
+            <div class="hamburger menu-btn" id="hamburger">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <ul class="header-list flexed" id="flexed-list">
                 <li><a href="#onas">O nás</a></li>
                 <li><a href="#naseVyrobky">Naše výrobky</a></li>
                 <li><a href="https://www.instagram.com/marmosky/"><img class="insta" src="./iglogo.png"></a></li>
             </ul>
         </nav>
+        <ul class="header-list" id="normal-list">
+            <li><a href="#onas">O nás</a></li>
+            <li><a href="#naseVyrobky">Naše výrobky</a></li>
+            <li><a href="https://www.instagram.com/marmosky/"><img class="insta" src="./iglogo.png"></a></li>
+        </ul>
     </header>
     <main>
         <section id="#onas">
