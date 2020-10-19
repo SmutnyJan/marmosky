@@ -1,17 +1,15 @@
 let ham = false; //false == zatáhnuto
 let menuBtn;
-let hamburger;
+let harburgr;
 let list;
 doTheHamburger = () => {
     if(ham) { //pokud je roztáhnuto
         ham = false;
         list.style.display = "none";
-        menuBtn.classList.remove('open');
     }
     else { //pokud je zatáhnuto
         ham = true;
         list.style.display = "block";
-        menuBtn.classList.add('open');
     }
 }
 doAutoHamburger = () => {
@@ -21,11 +19,16 @@ doAutoHamburger = () => {
     }
 }
 init = () => {
-    hamburger = document.getElementById("hamburger");
-    hamburger.addEventListener("click", doTheHamburger);
+    harburgr = document.getElementById("hamburger");
+    harburgr.addEventListener("click", doTheHamburger);
     list = document.getElementById("normal-list");
     window.addEventListener("resize", doAutoHamburger);
     menuBtn = document.querySelector('.menu-btn');
+
+    var hamburger = document.querySelector(".hamburger"); /* animations script */
+    hamburger.addEventListener("click", function() {
+      hamburger.classList.toggle("is-active");
+    });
 }
 
 document.addEventListener("DOMContentLoaded", init);

@@ -1,13 +1,15 @@
-.insta, .minilogo, .hamburger { /*stylování loga*/
+.hamburger:focus {
+    outline-color: red;
+}
+
+.insta, .minilogo { /*stylování loga*/
     width: 40px;
     height: 40px;
 }
 .minilogo { /*stylování loga*/
     padding: 12px;
 }
-.hamburger {
-    padding-right: 10px;
-}
+
 html { /*fonty*/
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -23,7 +25,8 @@ ul {
     list-style: none; /* bez teček */
 }
 main {
-    text-align: center
+    text-align: center;
+    margin-top: 7rem;
 }
 .logofaktogo { /*Míkosácký full logo*/
     width: 15rem;
@@ -33,6 +36,10 @@ main {
     background-color: grey;
     margin: 0;
     padding: 0;
+    position: fixed; /* aby bylo menu fixně nahoře*/
+    top: 0;
+    left: 0;
+    width: 100vw;
 }
 .navig {
     display: flex;
@@ -63,7 +70,6 @@ body {
 #normal-list {
     display: none;
 }
-
 
 
 /*Telefon na šířku*/
