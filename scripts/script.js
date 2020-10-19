@@ -1,8 +1,10 @@
 let ham = false; //false == zatáhnuto
-let menuBtn;
 let harburgr;
 let list;
+let hamburger;
 doTheHamburger = () => {
+    hamburger = document.getElementById("hamburger");
+    hamburger.classList.toggle("is-active"); /* prohození stavu*/
     if(ham) { //pokud je roztáhnuto
         ham = false;
         list.style.display = "none";
@@ -13,9 +15,11 @@ doTheHamburger = () => {
     }
 }
 doAutoHamburger = () => {
+    hamburger = document.getElementById("hamburger");
     if(window.innerWidth > 560) {
         ham = false;
         list.style.display = "none";
+        hamburger.classList.remove("is-active");
     }
 }
 init = () => {
@@ -23,12 +27,16 @@ init = () => {
     harburgr.addEventListener("click", doTheHamburger);
     list = document.getElementById("normal-list");
     window.addEventListener("resize", doAutoHamburger);
-    menuBtn = document.querySelector('.menu-btn');
 
-    var hamburger = document.querySelector(".hamburger"); /* animations script */
-    hamburger.addEventListener("click", function() {
-      hamburger.classList.toggle("is-active");
+
+    $(document).on('click', 'a', function(event){
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top -100
+        }, 1000);
+
     });
+
 }
 
 document.addEventListener("DOMContentLoaded", init);

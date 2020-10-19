@@ -1,78 +1,103 @@
-.hamburger:focus {
-    outline-color: red;
-}
-
-.insta, .minilogo { /*stylování loga*/
-    width: 40px;
-    height: 40px;
-}
-.minilogo { /*stylování loga*/
-    padding: 12px;
-}
-
-html { /*fonty*/
-    font-family: Arial, Helvetica, sans-serif;
-}
-a { /*odkazy*/
-    text-decoration: none;
-    color: black;
-}
-a:hover { /*odkazy*/
-    text-decoration: underline;
-    color: crimson;
-}
-ul {
-    list-style: none; /* bez teček */
-}
-main {
-    text-align: center;
-    margin-top: 7rem;
-}
-.logofaktogo { /*Míkosácký full logo*/
-    width: 15rem;
-    height: 15rem;
-}
 .header {
     background-color: grey;
     margin: 0;
     padding: 0;
-    position: fixed; /* aby bylo menu fixně nahoře*/
+    position: fixed;
+    /* aby bylo menu fixně nahoře*/
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
+    border-bottom: 4px solid blue;
 }
+
+.header-left {
+    padding-left: 10px;
+    /* proč? */
+}
+
+.header-list {
+    align-items: center;
+    padding-right: 10px;
+}
+
+.header-list li {
+    padding: 10px;
+}
+
 .navig {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header-left {
-    padding-left: 10px;
-}
-.header-list {
-    padding-left: 0px;
-    align-items: center;
-    padding-right: 10px;
-}
+
 .flexed {
     display: flex;
 }
+
+.flexed .no-pad {
+    padding: 0;
+}
+
+#flexed-list {
+    display: none;
+}
+
+#normal-list {
+    display: none;
+    text-align: center;
+}
+
+.minilogo {
+    /*stylování loga*/
+    width: 2.45rem;
+    height: 3rem;
+}
+
+.insta {
+    width: 3rem;
+    height: 3rem;
+}
+
+html {
+    /*fonty*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+    /* bez teček */
+}
+
+a {
+    /*odkazy*/
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    /*odkazy*/
+    text-decoration: underline;
+    color: crimson;
+}
+
+main {
+    text-align: center;
+    margin-top: 7rem;
+}
+
 body {
     padding: 0;
     margin: 0;
 }
-.header-list li {
-    padding: 10px;
-}
-#flexed-list {
-    display: none;
-}
-#normal-list {
-    display: none;
+.logofaktogo {
+    /*Míkosácký full logo*/
+    width: 15rem;
+    height: 15rem;
 }
 
 
 /*Telefon na šířku*/
+
 @media screen and (min-width: 560px) {
     html {
         background-color: green;
@@ -88,24 +113,24 @@ body {
     }
 }
 
-
 /*Tablet na výšku*/
+
 @media screen and (min-width: 720px) {
     html {
         background-color: white;
     }
 }
 
-
 /*Tablet na šířku*/
+
 @media screen and (min-width: 960px) {
     html {
         background-color: blue;
     }
 }
 
-
 /*Počítačový monitor*/
+
 @media screen and (min-width: 1200px) {
     html {
         background-color: pink;

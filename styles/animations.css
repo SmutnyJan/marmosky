@@ -6,7 +6,7 @@
  * @link https://github.com/jonsuh/hamburgers
  */
  .hamburger {
-  padding: 15px 15px;
+  padding: 11px 11px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -28,6 +28,10 @@
   .hamburger.is-active .hamburger-inner::after {
     background-color: rgb(255, 0, 0);
   }
+
+.hamburger:focus {
+    outline-color: red;
+}
 
 .hamburger-box {
   width: 40px;
