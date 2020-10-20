@@ -1,0 +1,53 @@
+::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #df2626;
+    border: 2px solid #000000;
+    border-radius: 14px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ac0c0c;
+  }
+  ::-webkit-scrollbar-thumb:active {
+    background: #ac0c0c;
+  }
+  ::-webkit-scrollbar-track {
+    background: #d1cccc;
+    border: 2px solid #000000;
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-track:active {
+    background: #ffffff;
+  }
+  ::-webkit-scrollbar-corner {
+    background: transparent;
+  }
+  /*
+  ::-webkit-scrollbar {
+      width: 1000px;
+  }
+  
+  ::-webkit-scrollbar-track {
+      background: url("../images/mladejhejsek.PNG");
+      background-size: 300px 65px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+      background: black url('../images/elmika.PNG');
+      background-size: 65px 350px;
+      width: 20px;
+      height: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+      background: rgb(161, 58, 58);
+  }*/
