@@ -2,6 +2,7 @@ let ham = false; //false == zatáhnuto
 let harburgr;
 let list;
 let hamburger;
+let aList;
 doTheHamburger = () => {
     hamburger = document.getElementById("hamburger");
     hamburger.classList.toggle("is-active"); /* prohození stavu*/
@@ -22,21 +23,23 @@ doAutoHamburger = () => {
         hamburger.classList.remove("is-active");
     }
 }
+specialABehav = (e) => {
+    e.preventDefault();
+    let href = e.target.getAttribute("href");
+    const element = document.querySelector(href)
+    const topPos = element.getBoundingClientRect().top + window.pageYOffset
+    window.scrollTo(0, topPos -100);
+}
 init = () => {
+    window.scrollTo(0, 0-1);
     harburgr = document.getElementById("hamburger");
-    harburgr.addEventListener("click", doTheHamburger);
     list = document.getElementById("normal-list");
+    aList = document.getElementsByClassName("anchor");
+    harburgr.addEventListener("click", doTheHamburger);
     window.addEventListener("resize", doAutoHamburger);
-
-
-    $(document).on('click', 'a', function(event){
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top -100
-        }, 1000);
-
-    });
-
+    for(let i = 0; i < aList.length; i++) {
+        aList[i].addEventListener("click", specialABehav);
+    }
 }
 
 document.addEventListener("DOMContentLoaded", init);

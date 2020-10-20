@@ -1,3 +1,5 @@
+
+
 .header {
     background-color: grey;
     margin: 0;
@@ -61,6 +63,7 @@
 html {
     /*fonty*/
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -82,7 +85,7 @@ a:hover {
 
 main {
     text-align: center;
-    margin-top: 7rem;
+    padding-top: 100px;
 }
 
 body {
