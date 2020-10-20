@@ -49,8 +49,8 @@
 
 .minilogo {
     /*stylování loga*/
-    width: 2.45rem;
-    height: 3rem;
+    width: 10.5rem;
+    height: 3.6rem;
 }
 .insta {
     width: 1.5rem;
@@ -62,6 +62,7 @@ html {
     /*fonty*/
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    background-color: lightgrey;
 }
 
 ul {
@@ -105,9 +106,6 @@ main section:nth-child(n+2) {
 /*Telefon na šířku*/
 
 @media screen and (min-width: 560px) {
-    html {
-        background-color: green;
-    }
     #normal-list {
         display: none;
     }
@@ -122,23 +120,17 @@ main section:nth-child(n+2) {
 /*Tablet na výšku*/
 
 @media screen and (min-width: 720px) {
-    html {
-        background-color: white;
-    }
+    
 }
 
 /*Tablet na šířku*/
 
 @media screen and (min-width: 960px) {
-    html {
-        background-color: blue;
-    }
+    
 }
 
 /*Počítačový monitor*/
 
 @media screen and (min-width: 1200px) {
-    html {
-        background-color: lightgrey;
-    }
+    
 }
