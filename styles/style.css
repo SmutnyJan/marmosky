@@ -1,3 +1,8 @@
+.arrow {
+    width: 40%;
+    transition: all 0.5s;
+}
+
 .header {
     background-color: white;
     margin: 0;
@@ -8,6 +13,7 @@
     left: 0;
     width: 100%;
     border-bottom: 4px solid red;
+    z-index: 1;
 }
 
 .header-left {
@@ -52,6 +58,7 @@
     width: 10.5rem;
     height: 3.6rem;
 }
+
 .insta {
     width: 1.5rem;
     height: 1.5rem;
@@ -84,24 +91,72 @@ a:hover {
 
 main {
     text-align: center;
-    margin-top: 7rem;
+    margin: 7rem 2rem 7rem 2rem;
 }
 
 body {
     padding: 0;
     margin: 0;
 }
-.logofaktogo {
-    /*Míkosácký full logo*/
-    width: 15rem;
-    height: 15rem;
-}
+
 main section:nth-child(n+2) {
     padding-top: 4rem;
-
 }
 
+.secret {
+    display: none;
+}
 
+.content {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+}
+
+.content * {
+    margin: 0;
+}
+
+.showMore {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: white;
+}
+
+.showMore * {
+    margin: 0;
+    cursor: pointer;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.jam {
+    width: 100%;
+}
+
+.zoom {
+    width: 100%;
+    overflow: hidden;
+}
+
+.zoom>img {
+    transform-origin: 50% 65%;
+    transition: transform 1s, filter 5s ease-in-out;
+}
+
+.zoom:hover>img {
+    transform: scale(1.5);
+}
 
 /*Telefon na šířku*/
 
@@ -115,22 +170,31 @@ main section:nth-child(n+2) {
     .hamburger {
         display: none;
     }
+    .arrow {
+        width: 20%;
+    }
 }
 
 /*Tablet na výšku*/
 
 @media screen and (min-width: 720px) {
-    
+    .jam {
+        width: 45%;
+    }
 }
 
 /*Tablet na šířku*/
 
 @media screen and (min-width: 960px) {
-    
+    .jam {
+        width: 35%;
+    }
 }
 
 /*Počítačový monitor*/
 
 @media screen and (min-width: 1200px) {
-    
+    .jam {
+        width: 30%;
+    }
 }
