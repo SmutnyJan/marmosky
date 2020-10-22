@@ -1,6 +1,33 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+
 .arrow {
     width: 40%;
     transition: all 0.5s;
+}
+.mikuvOddelovac {
+    width: 88%;
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    box-shadow: 1px -1px 8px 3px rgba(0,0,0,0.5);
+}
+footer * {
+    margin: 0;
 }
 
 .header {
@@ -12,8 +39,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom: 4px solid red;
     z-index: 1;
+    box-shadow: 2px -17px 8px 25px rgba(0,0,0,0.5);
 }
 
 .header-left {
@@ -27,12 +54,26 @@
 }
 
 .header-list li {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+}
+.header-list .border {
+    border-style: solid;
+    border-width: 1.5px;
+    border-bottom: black;
+    border-top: black;
 }
 
 .navig {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+.marmosky {
+    display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -67,14 +108,23 @@
 
 html {
     /*fonty*/
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
     scroll-behavior: smooth;
-    background-color: lightgrey;
+    background-color: white;
 }
 
 ul {
     list-style: none;
     /* bez teček */
+}
+h2 {
+    font-size: 3rem;
+    margin: 10px 0 10px 0;
+}
+h3 {
+    font-size: 2rem;
+    margin: 10px 0 10px 0;
 }
 
 a {
@@ -90,8 +140,9 @@ a:hover {
 }
 
 main {
+    font-family: 'Bellota Text', cursive;
     text-align: center;
-    margin: 7rem 2rem 7rem 2rem;
+    margin: 5.1rem 2rem 7rem 2rem;
 }
 
 body {
@@ -123,7 +174,7 @@ main section:nth-child(n+2) {
     font-size: 2rem;
     font-weight: bold;
     position: absolute;
-    bottom: 10%;
+    bottom: 1%;
     left: 50%;
     transform: translate(-50%, 0);
     color: white;
@@ -139,9 +190,16 @@ main section:nth-child(n+2) {
     position: relative;
     margin-top: 10px;
 }
+.container > img {
+    width: 100%;
+}
 
 .jam {
-    width: 100%;
+    width: 90%;
+    margin: 40px 0 10px 0;
+}
+.text {
+    font-size: 2rem;
 }
 
 .zoom {
@@ -173,12 +231,33 @@ main section:nth-child(n+2) {
     .arrow {
         width: 20%;
     }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    main {
+        text-align: center;
+        margin: 3.9rem 2rem 7rem 2rem;
+    }
+    .jam {
+        width: 50%;
+        margin: 40px 0 10px 0;
+    }
+    .container > img {
+        width: 50%;
+    }
+    
 }
 
 /*Tablet na výšku*/
 
 @media screen and (min-width: 720px) {
     .jam {
+        width: 45%;
+    }
+    .container > img {
         width: 45%;
     }
 }
@@ -189,12 +268,18 @@ main section:nth-child(n+2) {
     .jam {
         width: 35%;
     }
+    .container > img {
+        width: 35%;
+    }
 }
 
 /*Počítačový monitor*/
 
 @media screen and (min-width: 1200px) {
     .jam {
-        width: 30%;
+        width: 20%;
+    }
+    .container > img {
+        width: 90%;
     }
 }

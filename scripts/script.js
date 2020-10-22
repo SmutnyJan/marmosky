@@ -47,8 +47,6 @@ secretText = (e) => {
         secret.style.display = "block";
         e.target.style.transform = "rotate(180deg)"
     }
-    console.log(secret);  
-    console.log(window.getComputedStyle(secret, null).display);
 }
 
 init = () => {
