@@ -74,8 +74,13 @@ footer * {
 .marmosky {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+.marmosky-row {
+    display: block;
+}
+
 
 .flexed {
     display: flex;
@@ -142,7 +147,7 @@ a:hover {
 main {
     font-family: 'Bellota Text', cursive;
     text-align: center;
-    margin: 5.1rem 2rem 7rem 2rem;
+    margin: 4.5rem 2rem 7rem 2rem;
 }
 
 body {
@@ -229,7 +234,7 @@ main section:nth-child(n+2) {
         display: none;
     }
     .arrow {
-        width: 20%;
+        width: 5vw;
     }
     h2 {
         font-size: 2rem;
@@ -245,9 +250,11 @@ main section:nth-child(n+2) {
         width: 50%;
         margin: 40px 0 10px 0;
     }
-    .container > img {
-        width: 50%;
+
+    .arrow {
+        width: 15vw;
     }
+
     
 }
 
@@ -255,10 +262,16 @@ main section:nth-child(n+2) {
 
 @media screen and (min-width: 720px) {
     .jam {
-        width: 45%;
+        height: 100%;
     }
     .container > img {
-        width: 45%;
+        width: 90%;
+    }
+    .arrow {
+        width: 10vw;
+    }
+    .marmosky-row {
+        display: flex;
     }
 }
 
@@ -268,8 +281,15 @@ main section:nth-child(n+2) {
     .jam {
         width: 35%;
     }
-    .container > img {
-        width: 35%;
+
+    .arrow {
+        width: 5vw;
+    }
+    .marmosky-row {
+        display: flex;
+    }
+    .marmosky {
+        flex-wrap: nowrap;
     }
 }
 
@@ -279,7 +299,5 @@ main section:nth-child(n+2) {
     .jam {
         width: 20%;
     }
-    .container > img {
-        width: 90%;
-    }
+    
 }
