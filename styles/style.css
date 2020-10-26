@@ -28,7 +28,11 @@
     transition: all 0.5s;
 }
 .mikuvOddelovac {
-    width: 88%;
+    width: 100%;
+    margin-top: 90px;
+}
+.centered {
+    text-align: center;
 }
 
 footer {
@@ -41,6 +45,7 @@ footer * {
 }
 
 .header {
+    font-family: 'Questrial', sans-serif;
     background-color: white;
     margin: 0;
     padding: 0;
@@ -110,6 +115,7 @@ footer * {
 
 .flexed {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .flexed .no-pad {
@@ -138,11 +144,10 @@ footer * {
 }
 
 html {
-    /*fonty*/
-    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 20px;
     scroll-behavior: smooth;
     background-color: white;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 ul {
@@ -171,7 +176,6 @@ a:hover {
 }
 
 main {
-    font-family: 'Bellota Text', cursive;
     text-align: center;
     margin: 4.5rem 2rem 7rem 2rem;
 }
@@ -199,6 +203,16 @@ main section:nth-child(n+2) {
 
 .content * {
     margin: 0;
+}
+.block {
+    text-align: justify;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.block div {
+    width: 50%;
+    margin: 0 1% 0 1%;
 }
 
 .showMore {
@@ -270,7 +284,7 @@ main section:nth-child(n+2) {
     }
     main {
         text-align: center;
-        margin: 3.9rem 2rem 7rem 2rem;
+        margin: 3.2rem 2rem 7rem 2rem;
     }
     .jam {
         width: 50%;
@@ -280,7 +294,9 @@ main section:nth-child(n+2) {
     .arrow {
         width: 15vw;
     }
-
+    .mikuvOddelovac {
+        margin-top: 60px;
+    }
     
 }
 
@@ -298,7 +314,6 @@ main section:nth-child(n+2) {
     }
     .marmosky-row {
         display: flex;
-    }
 }
 
 /*Tablet na šířku*/
@@ -317,6 +332,13 @@ main section:nth-child(n+2) {
     .marmosky {
         flex-wrap: nowrap;
     }
+
+    .block {
+        flex-wrap: nowrap;
+    }
+    .block div {
+        margin: 0 10px 0 10px;
+    }
 }
 
 /*Počítačový monitor*/
@@ -325,5 +347,13 @@ main section:nth-child(n+2) {
     .jam {
         width: 20%;
     }
-    
+    main {
+        margin: 4.5rem 10rem 7rem 10rem;
+    }
+    .block {
+        margin: 0 10% 0 10%;
+    }
+    .block div {
+        margin: 0 5% 0 5%;
+    }
 }
