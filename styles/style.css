@@ -69,6 +69,16 @@ footer * {
 .flexed {
     padding-inline-end: 10px;
 }
+.flexed-slozeni {
+    display: flex;
+    justify-content: space-evenly;
+}
+.flexed-slozeni p {
+    margin: 0;
+}
+.clickable h3 {
+    margin: 1.5rem 0 1rem 0;
+}
 .mobile-header {
     padding-inline-end: 40px;
 }
@@ -80,17 +90,31 @@ footer * {
     padding-bottom: 0px;
 }
 .flexed .border {
-    border-style: solid;
-    border-width: 1.5px;
-    border-bottom: black;
-    border-top: black;
+    border-left: 1.5px solid black;
 }
 
 .mobile-header .border-mobile {
-    border-style: solid;
-    border-width: 1.5px;
-    border-left: black;
-    border-right: black;
+    border-bottom: 1.5px solid black;
+
+}
+#kontakty {
+    margin-top: 1rem;
+}
+.contacts {
+    display: flex;
+    text-align: left;
+    justify-content: start;
+    flex-wrap: wrap;
+    font-size: 1.25rem;
+}
+.contacts p {
+    margin: 0;
+}
+.contacts .split {
+    margin-bottom: 1vw;
+}
+.contacts > div {
+    margin: 3vw;
 }
 .mobile-header li {
     padding-top: 10px;
@@ -159,7 +183,7 @@ h2 {
     margin: 10px 0 10px 0;
 }
 h3 {
-    font-size: 2rem;
+    font-size: 1.1rem;
     margin: 10px 0 10px 0;
 }
 
@@ -191,6 +215,7 @@ main section:nth-child(n+2) {
 
 .secret {
     display: none;
+    font-size: 1.2rem;
 }
 
 .content {
@@ -280,7 +305,7 @@ main section:nth-child(n+2) {
         font-size: 2rem;
     }
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     main {
         text-align: center;
@@ -297,7 +322,10 @@ main section:nth-child(n+2) {
     .mikuvOddelovac {
         margin-top: 60px;
     }
-    
+    .contacts {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
 }
 
 /*Tablet na výšku*/
