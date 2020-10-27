@@ -48,14 +48,30 @@ secretText = (e) => {
         e.target.style.transform = "rotate(180deg)"
     }
 }
+switchModes = (e) => {
+    if(e.target.getAttribute("src") == "./images/loga/day.png") {
+        document.getElementsByClassName("nightmode")[0].src = "./images/loga/night.png"
+        document.getElementsByClassName("nightmode")[1].src = "./images/loga/night.png"
+        document.querySelector("body").style.backgroundColor = "black";
+        document.querySelector("body").style.color = "white";
+
+    }
+    else {
+        document.getElementsByClassName("nightmode")[0].src = "./images/loga/day.png"
+        document.getElementsByClassName("nightmode")[1].src = "./images/loga/day.png"
+        document.querySelector("body").style.backgroundColor = "white";
+        document.querySelector("body").style.color = "black";
+    }
+}
+
 
 init = () => {
     window.scrollTo(0, 0-1);
     harburgr = document.getElementById("hamburger");
     list = document.getElementById("normal-list");
     aList = document.getElementsByClassName("anchor");
+    nightmode = document.getElementsByClassName("nightmode")
     showMore = document.querySelectorAll(".showMore");
-
     harburgr.addEventListener("click", doTheHamburger);
     window.addEventListener("resize", doAutoHamburger);
     for(let i = 0; i < aList.length; i++) {
@@ -64,6 +80,8 @@ init = () => {
     for(let i = 0; i < showMore.length; i++) {
         showMore[i].addEventListener("click", secretText);
     }
+    nightmode[0].addEventListener("click", switchModes);
+    nightmode[1].addEventListener("click", switchModes);
 }
 
 document.addEventListener("DOMContentLoaded", init);
