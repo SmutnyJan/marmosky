@@ -54,7 +54,6 @@ switchModes = (e) => {
         document.getElementsByClassName("nightmode")[1].src = "./images/loga/night.png"
         document.querySelector("body").style.backgroundColor = "black";
         document.querySelector("body").style.color = "white";
-
     }
     else {
         document.getElementsByClassName("nightmode")[0].src = "./images/loga/day.png"
