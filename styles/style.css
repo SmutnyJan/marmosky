@@ -153,9 +153,37 @@ footer * {
 }
 
 #normal-list {
-    display: none;
+    display: block;
+    height: 0;
+    overflow: hidden;
     text-align: center;
+    margin: 0;
 }
+.toogle-anim-down {
+    overflow: hidden;
+    animation-name: down;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes down {
+    from {height: 0}
+    to {height: 178.5px}
+  }
+
+  .toogle-anim-up {
+    overflow: hidden;
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes up {
+    from {
+        height: 178.5px;
+    }
+    to {
+        height: 0px;
+    }
+  }
 
 .minilogo {
     /*stylování loga*/
@@ -215,9 +243,33 @@ main section:nth-child(n+2) {
     padding-top: 1rem;
 }
 
-.secret {
+.secret-anim-reveal {
+    overflow: hidden;
+    animation-name: secretreveal;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes secretreveal {
+    from {height: 0}
+    to {height: 140px}
+  }
+
+  .secret-anim-hide {
+    overflow: hidden;
+    animation-name: secrethide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes secrethide {
+    from {
+        height: 140px;
+    }
+    to {
+        height: 0px;
+    }
+  }
+.none {
     display: none;
-    font-size: 1.2rem;
 }
 
 .content {
@@ -292,15 +344,6 @@ main section:nth-child(n+2) {
 /*Telefon na šířku*/
 
 @media screen and (min-width: 560px) {
-    #normal-list {
-        display: none;
-    }
-    #flexed-list {
-        display: flex;
-    }
-    .hamburger {
-        display: none;
-    }
     .arrow {
         width: 5vw;
     }
@@ -334,6 +377,15 @@ main section:nth-child(n+2) {
 /*Tablet na výšku*/
 
 @media screen and (min-width: 720px) {
+    #normal-list {
+        display: none;
+    }
+    #flexed-list {
+        display: flex;
+    }
+    .hamburger {
+        display: none;
+    }
     .jam {
         height: 100%;
     }
