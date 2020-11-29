@@ -43,8 +43,8 @@ footer {
 }
 footer * {
     margin: 0;
+    padding: 10px;
 }
-
 .header {
     font-family: 'Questrial', sans-serif;
     color: black;
@@ -99,8 +99,8 @@ footer * {
     border-bottom: 1.5px solid black;
 
 }
-#kontakty {
-    margin-top: 1rem;
+#kontakty, #naseVyrobky {
+    margin-top: 2rem;
 }
 .contacts {
     display: flex;
@@ -167,7 +167,7 @@ footer * {
 }
 @keyframes down {
     from {height: 0}
-    to {height: 178.5px}
+    to {height: 225px}
   }
 
   .toogle-anim-up {
@@ -178,7 +178,7 @@ footer * {
 }
 @keyframes up {
     from {
-        height: 178.5px;
+        height: 225px;
     }
     to {
         height: 0px;
@@ -377,6 +377,19 @@ main section:nth-child(n+2) {
 /*Tablet na výšku*/
 
 @media screen and (min-width: 720px) {
+    .jam {
+        height: 100%;
+    }
+    .container > img {
+        width: 90%;
+    }
+    .arrow {
+        width: 10vw;
+    }    
+}
+
+@media screen and (min-width: 792px) { /* media screen čistě na včasnou změnu normal listu na flex-list (ten, co je pod sebou)...
+                                   jinak by se položky v headeru zalamovali, ale nebyly by pod sebou*/
     #normal-list {
         display: none;
     }
@@ -386,18 +399,11 @@ main section:nth-child(n+2) {
     .hamburger {
         display: none;
     }
-    .jam {
-        height: 100%;
-    }
-    .container > img {
-        width: 90%;
-    }
-    .arrow {
-        width: 10vw;
-    }
     .marmosky-row {
         display: flex;
+    }    
 }
+
 
 /*Tablet na šířku*/
 

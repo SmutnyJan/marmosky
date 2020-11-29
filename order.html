@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmošky</title>
+    <link rel="icon" href="images/loga/minilogo.png">
+    <script src="scripts/order.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/order.css">
+    <link rel="stylesheet" href="styles/scrollbar.css">
+    <link rel="stylesheet" href="./styles/toogle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Questrial&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navig">
+            <div class="header-left">
+                <a href="index.html"><img class="minilogo" src="images/loga/logo_konec.png"></a>
+            </div>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="header-list flexed" id="flexed-list">
+                <li><a href="eshop.html">Obchod</a></li>
+                <li class="border"><a href="index.html">Domů</a></li>
+                <li class="border"><a href="https://www.instagram.com/marmosky/">Instagram</a></li>
+            </ul>
+        </nav>
+        <ul class="header-list mobile-header" id="normal-list">
+            <li class="border-mobile"><a href="eshop.html">Obchod</a></li>
+            <li class="border-mobile"><a href="index.html">Domů</a></li>
+            <li class="no-pad"><a href="https://www.instagram.com/marmosky/"><img class="insta"
+                        src="images/loga/iglogo.png"></a></li>
+        </ul>
+    </header>
+
+    <div class="centered">
+        <img class="mikuvOddelovac" src="images/marmosky/separatoredited.png">
+    </div>
+    <main>
+        <section>
+            <h2>Shrnutí objednávky</h2>
+            <div id="order">
+
+            </div>
+            <a id="submit"><button>Odeslat email</button></a>
+        </section>
+    </main>
+    <footer>
+        <p>Jan Smutný | Vojtěch Dejnožka | Filip Míka</p>
+    </footer>
+
+
+</body>
+
+</html>

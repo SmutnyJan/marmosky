@@ -1,0 +1,71 @@
+input {
+    border: 2px solid red;
+    border-radius: 4px;
+  }
+  section:nth-of-type(2) {
+    margin-top: 50px;
+  }
+  section {
+      margin-top: 50px;
+  }
+button {
+    background-color: white; /* Green */
+    border: 2px red solid;
+    border-radius: 5px;
+    color: black;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+  button:hover {
+    background: rgb(36,0,0);
+    background: radial-gradient(circle, rgba(36,0,0,0) 0%, rgba(255,0,0,0.5438550420168067) 100%);
+    cursor: pointer;
+  }
+#order div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid black;
+
+}
+#order div p {
+    margin-right: 50px;
+    font-size: 1rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+
+@media screen and (min-width: 542px) {
+    /* media screen čistě na včasnou změnu normal listu na flex-list (ten, co je pod sebou)...
+    jinak by se položky v headeru zalamovali, ale nebyly by pod sebou*/
+    #normal-list {
+        display: none;
+    }
+    #flexed-list {
+        display: flex;
+    }
+    .hamburger {
+        display: none;
+    }
+    .marmosky-row {
+        display: flex;
+    }
+}
+
+@keyframes down {
+    from {
+        height: 0
+    }
+    to {
+        height: 150px
+    }
+}
+
+@keyframes up {
+    from {
+        height: 150px;
+    }
+    to {
+        height: 0px;
+    }
+}

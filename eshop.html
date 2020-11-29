@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marmošky</title>
+    <link rel="icon" href="images/loga/minilogo.png">
+    <script src="scripts/shop.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/shop.css">
+    <link rel="stylesheet" href="styles/scrollbar.css">
+    <link rel="stylesheet" href="./styles/toogle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Questrial&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navig">
+            <div class="header-left">
+                <a href="index.html"><img class="minilogo" src="images/loga/logo_konec.png"></a>
+            </div>
+            <button class="hamburger hamburger--elastic" id="hamburger" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="header-list flexed" id="flexed-list">
+                <li><a href="#">Obchod</a></li>
+                <li class="border"><a href="index.html">Domů</a></li>
+                <li class="border"><a href="https://www.instagram.com/marmosky/">Instagram</a></li>
+            </ul>
+        </nav>
+        <ul class="header-list mobile-header" id="normal-list">
+            <li class="border-mobile"><a href="#">Obchod</a></li>
+            <li class="border-mobile"><a href="index.html">Domů</a></li>
+            <li class="no-pad"><a href="https://www.instagram.com/marmosky/"><img class="insta"
+                        src="images/loga/iglogo.png"></a></li>
+        </ul>
+    </header>
+
+    <div class="centered">
+        <img class="mikuvOddelovac" src="images/marmosky/separatoredited.png">
+    </div>
+    <main>
+        <section>
+            <form action="order.html">
+                <section>
+
+                    <h2>Marmelády</h2>
+                    <div>
+                        <label for="boruvka">Borůvka (60kč/kus):</label>
+                        <input type="number" id="boruvka" name="boruvka" min="0" value="0"></br>
+                    </div>
+                    <div>
+                        <label for="malina">Malina (60kč/kus):</label>
+                        <input type="number" id="malina" name="malina" min="0" value="0"></br>
+                    </div>
+                    <div>
+                        <label for="jahoda">Jahoda (60kč/kus):</label>
+                        <input type="number" id="jahoda" name="jahoda" min="0" value="0"></br>
+                    </div>
+                    <div>
+                        <label for="hruska">Hruška (60kč/kus):</label>
+                        <input type="number" id="hruska" name="hruska" min="0" value="0"></br>
+                    </div>
+                </section>
+                <section>
+
+                    <h2>Dodací údaje</h2>
+                    <div>
+                        <label for="jmenoAPrijmeni">Jméno a Příjmení:</label>
+                        <input type="text" id="jmenoAPrijmeni" name="jmenoAPrijmeni" placeholder="Jméno a příjmeni" required></br>
+                    </div>
+                    <div>
+                        <label for="mesto">Město:</label>
+                        <input type="text" id="mesto" name="mesto" placeholder="Město" required></br>
+                    </div>
+                    <div>
+                        <label for="uliceACisloDomu">Ulice a číslo domu:</label>
+                        <input type="text" id="uliceACisloDomu" name="uliceACisloDomu" placeholder="Ulice a číslo domu"
+                        required></br>
+                    </div>
+                    <div>
+                        <label for="psc">Poštovní směrovací číslo:</label>
+                        <input type="text" id="psc" name="psc" placeholder="PSČ" pattern="([0-9]{5})|([0-9]{3} [0-9]{2})"
+                        required></br>
+                    </div>
+                    <div>
+                        <label for="tel">Telefonní číslo:</label>
+                        <input type="tel" id="tel" name="tel" placeholder="Telefonní číslo"
+                        pattern="([0-9]{3}[0-9]{3}[0-9]{3})|([0-9]{3} [0-9]{3} [0-9]{3})" required
+                        ></br>
+                    </div>
+
+                    <button type="submit">Další krok</button>
+                </section>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <p>Jan Smutný | Vojtěch Dejnožka | Filip Míka</p>
+    </footer>
+
+
+</body>
+
+</html>
