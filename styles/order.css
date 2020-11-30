@@ -1,40 +1,54 @@
 input {
     border: 2px solid red;
     border-radius: 4px;
-  }
-  section:nth-of-type(2) {
+}
+
+section:nth-of-type(2) {
     margin-top: 50px;
-  }
-  section {
-      margin-top: 50px;
-  }
+}
+
+section {
+    margin-top: 50px;
+}
+
 button {
-    background-color: white; /* Green */
+    background-color: white;
+    /* Green */
     border: 2px red solid;
     border-radius: 5px;
     color: black;
     padding: 5px 10px;
     font-size: 16px;
-  }
-  button:hover {
-    background: rgb(36,0,0);
-    background: radial-gradient(circle, rgba(36,0,0,0) 0%, rgba(255,0,0,0.5438550420168067) 100%);
-    cursor: pointer;
-  }
-#order div {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 4px solid black;
+}
 
+button:hover {
+    background: rgb(36, 0, 0);
+    background: radial-gradient(circle, rgba(36, 0, 0, 0) 0%, rgba(255, 0, 0, 0.5438550420168067) 100%);
+    cursor: pointer;
 }
-#order div p {
-    margin-right: 50px;
-    font-size: 1rem;
+
+table {
+    border-collapse: collapse;
+    text-align: center;
 }
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    border: 1px solid #dddddd;
+    padding: 0.3rem 0.5rem 0.3rem 0.5rem;
+}
+
 h2 {
     font-size: 2.5rem;
 }
 
+#copy {
+    display: none;
+}
 @media screen and (min-width: 542px) {
     /* media screen čistě na včasnou změnu normal listu na flex-list (ten, co je pod sebou)...
     jinak by se položky v headeru zalamovali, ale nebyly by pod sebou*/
@@ -50,6 +64,7 @@ h2 {
     .marmosky-row {
         display: flex;
     }
+
 }
 
 @keyframes down {

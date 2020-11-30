@@ -84,20 +84,20 @@ init = () => {
         tel: urlParams.get("tel")
     }
     let names = [["Borůvka", info.boruvka], ["Malina", info.malina], ["Jahoda", info.jahoda], ["Hruška", info.hruska], ["Jméno a příjmení", info.jmenoAPrijmeni], ["Město", info.mesto], ["Poštovní směrovací číslo", info.psc], ["Ulice a číslo domu", info.uliceACisloDomu], ["Telefonní číslo", info.tel]];
-    let orderList = document.getElementById("order");
+    let table = document.getElementsByClassName("center")[0]
     for(var i = 0; i < names.length; i++) {
-        let div = document.createElement("div");
-        let p1 = document.createElement("p");
-        let p2 = document.createElement("p");
-        p1.appendChild(document.createTextNode(names[i][0]));
-        p2.appendChild(document.createTextNode(names[i][1]));
-        div.appendChild(p1);
-        div.appendChild(p2);
-        orderList.appendChild(div);
+        let td1 = document.createElement("td");
+        let td2 = document.createElement("td");
+        td1.appendChild(document.createTextNode(names[i][0]));
+        td2.appendChild(document.createTextNode(names[i][1]));
+        let tr = document.createElement("tr");
+        tr.appendChild(td1);
+        tr.appendChild(td2);
+        table.appendChild(tr);
     }
     p = document.createElement("p");
     p.appendChild(document.createTextNode("Celková cena: " + (parseInt(info.boruvka) + parseInt(info.malina) + parseInt(info.jahoda) + parseInt(info.hruska)) * 60 + "KČ"))//celková cena
-    orderList.appendChild(p);
+    document.getElementById("price").appendChild(p);
     let message = "mailto:info-marmosky@seznam.cz?subject=Objednavka&body=" + `Objednávka:
     %0A%20%20%20%20Jméno%20a%20příjmení:%20${info.jmenoAPrijmeni}
     %0A%20%20%20%20Město:%20${info.mesto}
@@ -108,8 +108,15 @@ init = () => {
     %0A%20%20%20%20Malina:%20${info.malina}
     %0A%20%20%20%20Jahoda:%20${info.jahoda}
     %0A%20%20%20%20Hruška:%20${info.hruska}%0A`
-    let submit = document.getElementById("submit");
-    submit.setAttribute("href", message);
+    document.getElementById("copy").value = message;
+    document.getElementById("submit").setAttribute("href", message);
+    document.getElementById("copyButton").addEventListener("click", copy);
 }
-
+copy = () => {
+    var copyText = document.getElementById("copy");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999)
+    document.execCommand("copy");
+    alert("Email zkopírován!");
+}
 document.addEventListener("DOMContentLoaded", init);
