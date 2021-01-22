@@ -45,6 +45,17 @@ footer * {
     margin: 0;
     padding: 10px;
 }
+
+.footerlogo {
+    width: 90.5px;
+    height: 25.6px;
+    margin-left: 5px;
+}
+.zastita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .header {
     font-family: 'Questrial', sans-serif;
     color: black;
@@ -100,7 +111,7 @@ footer * {
 
 }
 #kontakty, #naseVyrobky {
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 .contacts {
     display: flex;
@@ -116,7 +127,9 @@ footer * {
     margin-bottom: 1vw;
 }
 .contacts > div {
-    margin: 3vw;
+    margin: 5vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
 }
 .mobile-header li {
     padding-top: 10px;
@@ -246,7 +259,7 @@ a:hover {
 
 main {
     text-align: center;
-    margin: 4.5rem 2rem 7rem 2rem;
+    margin: 4.5rem 2rem 3.5rem 2rem;
 }
 
 body {
@@ -370,7 +383,7 @@ main section:nth-child(n+2) {
     }
     main {
         text-align: center;
-        margin: 3.2rem 2rem 7rem 2rem;
+        margin: 3.2rem 2rem 3.5rem 2rem;
     }
     .jam {
         width: 50%;
@@ -401,6 +414,11 @@ main section:nth-child(n+2) {
     .arrow {
         width: 10vw;
     }    
+    .footerlogo {
+        width: 181px;
+        height: 51.2px;
+        margin-left: 10px;
+    }
 }
 
 @media screen and (min-width: 792px) { /* media screen čistě na včasnou změnu normal listu na flex-list (ten, co je pod sebou)...
@@ -454,7 +472,7 @@ main section:nth-child(n+2) {
         width: 20%;
     }
     main {
-        margin: 4.5rem 10rem 7rem 10rem;
+        margin: 4.5rem 10rem 3.5rem 10rem;
     }
     .block {
         margin: 0 10% 0 10%;

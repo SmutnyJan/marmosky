@@ -1,0 +1,10 @@
+.map {
+    width: 80%;
+    height: 100%;
+}
+.gmap_canvas {
+    height: 50vh;
+}
+.mapcanvas {
+    margin-bottom: 3.5rem;
+}
