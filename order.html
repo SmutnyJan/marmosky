@@ -7,7 +7,6 @@
     <title>Marmošky</title>
     <link rel="icon" href="images/loga/minilogo.png">
     <script src="scripts/order.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/order.css">
@@ -56,11 +55,23 @@
             </div>
 
             <p><b>Doklad obdržený při nákupu není možné zadat do klasického účetnictví!</b></p>
-            <p>Po kliknutí na tlačítko <b>odeslat email</b> se Vám otevře nakonfigurovaný emailový klient.</p>
-            <p>Pokud se Vám něco nepodařilo, neváhejte a napiště nám na náš email (info-marmosky@seznam.cz). Rádi Vám se vším pomůžeme. Můžete také kliknout na tlačítko <b>Zkopírovat</b>, díky kterému se Vám email s objednávkou zkopíruje do schránky. Ten nám poté můžete poslat tak, jak jste zvyklí. Stačí jen vložit zkopírovaný text.</p>
-            <input type="text" value="" id="copy">
-            <button id="copyButton">Zkopírovat</button>
-            <a id="submit"><button>Odeslat email</button></a>
+            <form action="sendEmail.php" method="post">
+                <input type="hidden" id="boruvka" name="boruvka" value="" />
+                <input type="hidden" id="malina" name="malina" value="" />
+                <input type="hidden" id="jahoda" name="jahoda" value="" />
+                <input type="hidden" id="hruska" name="hruska" value="" />
+                <input type="hidden" id="jmenoAPrijmeni" name="jmenoAPrijmeni" value="" />
+                <input type="hidden" id="mesto" name="mesto" value="" />
+                <input type="hidden" id="psc" name="psc" value="" />
+                <input type="hidden" id="uliceACisloDomu" name="uliceACisloDomu" value="" />
+                <input type="hidden" id="tel" name="tel" value="" />
+                <input type="hidden" id="doprava" name="doprava" value="" />
+                <input type="hidden" id="cena" name="cena" value="" />
+
+
+          
+                <input type="submit" id="submit" value="Odeslat objednávku" />
+            </form>
         </section>
     </main>
     <footer>

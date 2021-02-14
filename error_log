@@ -1,0 +1,32 @@
+[13-Feb-2021 11:25:24 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php:2076
+Stack trace:
+#0 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1900): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1614): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 13 F...', 'Ahojd\xC3\xA1\r\n')
+#2 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1447): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 C:\xampp\htdocs\phpmailer\idk.php(31): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 2076
+[13-Feb-2021 12:38:47 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php:2089
+Stack trace:
+#0 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1900): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1614): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 13 F...', 'Ahojd\xC3\xA1\r\n')
+#2 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1447): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 C:\xampp\htdocs\phpmailer\idk.php(37): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 2089
+[13-Feb-2021 13:16:15 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php:2089
+Stack trace:
+#0 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1900): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1614): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 13 F...', 'Ahojd\xC3\xA1\r\n')
+#2 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1447): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 C:\xampp\htdocs\phpmailer\idk.php(37): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 2089
+[13-Feb-2021 13:32:19 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php:2076
+Stack trace:
+#0 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1900): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1614): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 13 F...', 'Ahojd\xC3\xA1\r\n')
+#2 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1447): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 C:\xampp\htdocs\phpmailer\idk.php(37): PHPMailer\PHPMailer\PHPMailer->send()
+#4 {main}
+  thrown in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 2076

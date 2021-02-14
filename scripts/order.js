@@ -81,9 +81,10 @@ init = () => {
         mesto: urlParams.get("mesto"),
         psc: urlParams.get("psc"),
         uliceACisloDomu: urlParams.get("uliceACisloDomu"),
-        tel: urlParams.get("tel")
+        tel: urlParams.get("tel"),
+        doprava: urlParams.get("doprava")
     }
-    let names = [["Borůvka", info.boruvka], ["Malina", info.malina], ["Jahoda", info.jahoda], ["Hruška", info.hruska], ["Jméno a příjmení", info.jmenoAPrijmeni], ["Město", info.mesto], ["Poštovní směrovací číslo", info.psc], ["Ulice a číslo domu", info.uliceACisloDomu], ["Telefonní číslo", info.tel]];
+    let names = [["Borůvka", info.boruvka], ["Malina", info.malina], ["Jahoda", info.jahoda], ["Hruška", info.hruska], ["Jméno a příjmení", info.jmenoAPrijmeni], ["Město", info.mesto], ["Poštovní směrovací číslo", info.psc], ["Ulice a číslo domu", info.uliceACisloDomu], ["Telefonní číslo", info.tel], ["Doprava", info.doprava]];
     let table = document.getElementsByClassName("center")[0]
     for(var i = 0; i < names.length; i++) {
         let td1 = document.createElement("td");
@@ -95,28 +96,15 @@ init = () => {
         tr.appendChild(td2);
         table.appendChild(tr);
     }
+    for (const key in info) {
+        let form = document.getElementById(key);
+        form.value = info[key];
+    }
+    let price = (parseInt(info.boruvka) + parseInt(info.malina) + parseInt(info.jahoda) + parseInt(info.hruska)) * 60;
     p = document.createElement("p");
-    p.appendChild(document.createTextNode("Celková cena: " + (parseInt(info.boruvka) + parseInt(info.malina) + parseInt(info.jahoda) + parseInt(info.hruska)) * 60 + "KČ"))//celková cena
+    p.appendChild(document.createTextNode("Celková cena: " + price + "KČ"))//celková cena
     document.getElementById("price").appendChild(p);
-    let message = "mailto:info-marmosky@seznam.cz?subject=Objednavka&body=" + `Objednávka:
-    %0A%20%20%20%20Jméno%20a%20příjmení:%20${info.jmenoAPrijmeni}
-    %0A%20%20%20%20Město:%20${info.mesto}
-    %0A%20%20%20%20Ulice%20a%20číslo%20domu:%20${info.uliceACisloDomu}
-    %0A%20%20%20%20PSČ:%20${info.psc}
-    %0A%20%20%20%20Telefonní%20číslo:%20${info.tel}
-    %0A%20%20%20%20Borůvka:%20${info.boruvka}
-    %0A%20%20%20%20Malina:%20${info.malina}
-    %0A%20%20%20%20Jahoda:%20${info.jahoda}
-    %0A%20%20%20%20Hruška:%20${info.hruska}%0A`
-    document.getElementById("copy").value = message;
-    document.getElementById("submit").setAttribute("href", message);
-    document.getElementById("copyButton").addEventListener("click", copy);
+    document.getElementById("cena").value = price;
 }
-copy = () => {
-    var copyText = document.getElementById("copy");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999)
-    document.execCommand("copy");
-    alert("Email zkopírován!");
-}
+
 document.addEventListener("DOMContentLoaded", init);
