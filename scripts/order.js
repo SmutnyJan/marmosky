@@ -78,13 +78,16 @@ init = () => {
         jahoda: urlParams.get("jahoda"),
         hruska: urlParams.get("hruska"),
         jmenoAPrijmeni: urlParams.get("jmenoAPrijmeni"),
+        email: urlParams.get("email"),
         mesto: urlParams.get("mesto"),
         psc: urlParams.get("psc"),
         uliceACisloDomu: urlParams.get("uliceACisloDomu"),
         tel: urlParams.get("tel"),
         doprava: urlParams.get("doprava")
     }
-    let names = [["Borůvka", info.boruvka], ["Malina", info.malina], ["Jahoda", info.jahoda], ["Hruška", info.hruska], ["Jméno a příjmení", info.jmenoAPrijmeni], ["Město", info.mesto], ["Poštovní směrovací číslo", info.psc], ["Ulice a číslo domu", info.uliceACisloDomu], ["Telefonní číslo", info.tel], ["Doprava", info.doprava]];
+    //dobírka: 80 kč
+    //doporučeně: 180 kč
+    let names = [["Borůvka", info.boruvka], ["Malina", info.malina], ["Jahoda", info.jahoda], ["Hruška", info.hruska], ["Jméno a příjmení", info.jmenoAPrijmeni], ["Město", info.mesto], ["Email", info.email], ["Poštovní směrovací číslo", info.psc], ["Ulice a číslo domu", info.uliceACisloDomu], ["Telefonní číslo", info.tel], ["Doprava", info.doprava]];
     let table = document.getElementsByClassName("center")[0]
     for(var i = 0; i < names.length; i++) {
         let td1 = document.createElement("td");
@@ -100,7 +103,7 @@ init = () => {
         let form = document.getElementById(key);
         form.value = info[key];
     }
-    let price = (parseInt(info.boruvka) + parseInt(info.malina) + parseInt(info.jahoda) + parseInt(info.hruska)) * 60;
+    let price = (parseInt(info.boruvka) + parseInt(info.malina) + parseInt(info.jahoda) + parseInt(info.hruska)) * 60 + (info.doprava == "Dobírka"? 80: 180);
     p = document.createElement("p");
     p.appendChild(document.createTextNode("Celková cena: " + price + "KČ"))//celková cena
     document.getElementById("price").appendChild(p);

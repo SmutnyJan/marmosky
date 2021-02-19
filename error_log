@@ -1,32 +1,190 @@
-[13-Feb-2021 11:25:24 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php:2076
+[14-Feb-2021 18:37:38 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 23
+[14-Feb-2021 18:43:53 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 156
+[14-Feb-2021 18:43:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:156
 Stack trace:
-#0 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1900): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
-#1 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1614): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 13 F...', 'Ahojd\xC3\xA1\r\n')
-#2 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1447): PHPMailer\PHPMailer\PHPMailer->postSend()
-#3 C:\xampp\htdocs\phpmailer\idk.php(31): PHPMailer\PHPMailer\PHPMailer->send()
-#4 {main}
-  thrown in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 2076
-[13-Feb-2021 12:38:47 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php:2089
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 156
+[14-Feb-2021 18:45:09 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 158
+[14-Feb-2021 18:45:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:158
 Stack trace:
-#0 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1900): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
-#1 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1614): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 13 F...', 'Ahojd\xC3\xA1\r\n')
-#2 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1447): PHPMailer\PHPMailer\PHPMailer->postSend()
-#3 C:\xampp\htdocs\phpmailer\idk.php(37): PHPMailer\PHPMailer\PHPMailer->send()
-#4 {main}
-  thrown in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 2089
-[13-Feb-2021 13:16:15 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not authenticate. in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php:2089
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 158
+[14-Feb-2021 18:45:10 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 158
+[14-Feb-2021 18:45:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:158
 Stack trace:
-#0 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1900): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
-#1 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1614): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 13 F...', 'Ahojd\xC3\xA1\r\n')
-#2 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1447): PHPMailer\PHPMailer\PHPMailer->postSend()
-#3 C:\xampp\htdocs\phpmailer\idk.php(37): PHPMailer\PHPMailer\PHPMailer->send()
-#4 {main}
-  thrown in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 2089
-[13-Feb-2021 13:32:19 UTC] PHP Fatal error:  Uncaught PHPMailer\PHPMailer\Exception: SMTP Error: Could not connect to SMTP host. in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php:2076
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 158
+[14-Feb-2021 18:45:10 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 158
+[14-Feb-2021 18:45:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:158
 Stack trace:
-#0 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1900): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
-#1 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1614): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Sat, 13 F...', 'Ahojd\xC3\xA1\r\n')
-#2 C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php(1447): PHPMailer\PHPMailer\PHPMailer->postSend()
-#3 C:\xampp\htdocs\phpmailer\idk.php(37): PHPMailer\PHPMailer\PHPMailer->send()
-#4 {main}
-  thrown in C:\xampp\htdocs\phpmailer\vendor\phpmailer\phpmailer\src\PHPMailer.php on line 2076
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 158
+[14-Feb-2021 18:45:42 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:159
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:43 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:159
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:43 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:159
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:43 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:43 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:159
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:52 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:159
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:52 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:52 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:159
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:53 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:159
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:53 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:45:53 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:159
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 159
+[14-Feb-2021 18:46:28 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 165
+[14-Feb-2021 18:46:28 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 165
+[14-Feb-2021 18:46:29 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 165
+[14-Feb-2021 18:46:29 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 165
+[14-Feb-2021 18:46:29 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 165
+[14-Feb-2021 18:46:29 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 165
+[14-Feb-2021 18:48:59 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 164
+[14-Feb-2021 18:50:11 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 158
+[14-Feb-2021 18:50:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:158
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 158
+[14-Feb-2021 18:56:03 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:56:03 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:06 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:08 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:08 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:09 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:09 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:09 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:09 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:09 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:09 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:09 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:10 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:10 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:10 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:10 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:10 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:10 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:11 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:11 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:11 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:176
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 176
+[14-Feb-2021 18:57:41 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 177
+[14-Feb-2021 18:57:41 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:177
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 177
+[14-Feb-2021 18:57:42 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 177
+[14-Feb-2021 18:57:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:177
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 177
+[14-Feb-2021 18:57:42 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 177
+[14-Feb-2021 18:57:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:177
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 177
+[14-Feb-2021 18:57:42 UTC] PHP Warning:  Undefined variable $mail in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 177
+[14-Feb-2021 18:57:42 UTC] PHP Fatal error:  Uncaught Error: Call to a member function send() on null in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php:177
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 177
+[14-Feb-2021 18:58:34 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 182
+[14-Feb-2021 19:00:08 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 181
+[14-Feb-2021 19:03:59 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 205
+[14-Feb-2021 19:05:30 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 205
+[14-Feb-2021 19:07:10 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 205
+[14-Feb-2021 19:09:27 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 205
+[14-Feb-2021 19:10:31 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 205
+[14-Feb-2021 19:13:00 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 205
+[19-Feb-2021 19:58:59 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 205
+[19-Feb-2021 20:01:34 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 205
+[19-Feb-2021 21:01:21 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 209
+[19-Feb-2021 21:04:24 UTC] PHP Warning:  Undefined variable $idk in C:\xampp\htdocs\marmosy\marmosky\sendEmail.php on line 209
